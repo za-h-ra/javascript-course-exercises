@@ -21,3 +21,7 @@ console.log(typeof population)
 console.log(typeof country)
 console.log(typeof language)
 
+// LECTURE: Let, Const and Var
+
+language = 'English'
+console.log(typeof language)
