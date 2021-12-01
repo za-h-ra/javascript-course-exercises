@@ -56,3 +56,9 @@ let description =
   ' million people speak ' +
   language
 console.log(description)
+
+
+// LECTURE: String and Template Literals
+
+let description2 = `${country} is in ${continent}, and its ${population} million people speak ${language}`
+console.log(description2)
