@@ -7,8 +7,8 @@
 // 3. Createa Boolean variable 'markHigherBMI' containing information about whether Mark has a higher BMI than John.
 
 // Test data:
-// § Data 1: Marks weights 78 kg and is 1.69 m tall. John weights 92 kg and is 1.95 m tall.
-// § Data 2: Marks weights 95 kg and is 1.88 m tall. John weights 85 kg and is 1.76 m tall.
+// Data 1: Marks weights 78 kg and is 1.69 m tall. John weights 92 kg and is 1.95 m tall.
+// Data 2: Marks weights 95 kg and is 1.88 m tall. John weights 85 kg and is 1.76 m tall.
 
 let markMass = 78
 const markHeight = 1.69
