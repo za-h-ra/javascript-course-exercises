@@ -57,8 +57,17 @@ let description =
   language
 console.log(description)
 
-
 // LECTURE: String and Template Literals
 
 let description2 = `${country} is in ${continent}, and its ${population} million people speak ${language}`
 console.log(description2)
+
+// LECTURE: Taking Decisions (if/else statement)
+
+if (population > 33) {
+  console.log(`${country}'s population is above average`)
+} else {
+  console.log(
+    `${country}'s population is ${33 - population} million below average`
+  )
+}
