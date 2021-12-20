@@ -86,6 +86,10 @@ if (population > 33) {
 //   console.log('No borders')
 // }
 
-
 // LECTURE: LOGICAL OPERATORS
 
+if (language === 'English' && population < 50 && country !== isIsland) {
+  console.log(`You should live in ${country}`)
+} else {
+  console.log(`${country} does not meet your criteria`)
+}
