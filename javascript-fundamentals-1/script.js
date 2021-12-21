@@ -93,3 +93,22 @@ if (language === 'English' && population < 50 && country !== isIsland) {
 } else {
   console.log(`${country} does not meet your criteria`)
 }
+
+// LECTURE: The switch statement
+switch (language) {
+  case 'Chinese':
+  case 'Mandarin':
+    console.log('MOST number of native speakers')
+    break
+  case 'Spanish':
+    console.log('2nd place in number of native speakers')
+    break
+  case 'English':
+    console.log('3rd place')
+    break
+  case 'Arabic':
+    console.log('5th most spoken language')
+    break
+  default:
+    console.log('Great language too!')
+}
