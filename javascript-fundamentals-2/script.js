@@ -41,9 +41,20 @@ console.log(describePopulation('United States', 1441))
 // LECTURE: Introduction to Arrays
 
 const populations = [329.5, 45.38, 128.9, 67.22]
-
 console.log(populations.length === 4)
-
 const percentages = [4.2, 0.6, 1.6, 0.9]
-
 console.log(percentageOfWorld1(populations[3]))
+
+// Basic Array Operations
+
+const neighbors = ['Costa Rica', 'Panama', 'Nicaragua']
+neighbors.push('Utopia')
+console.log(neighbors)
+neighbors.pop()
+console.log(neighbors)
+
+if (!neighbors.includes('Germany')) console.log('Probably not a central american country')
+
+neighbors[neighbors.indexOf('Panama')] = 'Colombia'
+console.log(neighbors)
+
