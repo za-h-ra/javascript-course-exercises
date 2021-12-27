@@ -12,7 +12,7 @@ console.log(describeCountry('Austrailia', 25.69, 'Canberra'))
 // LECTURE: Function Declarations vs Expressions
 
 function percentageOfWorld1(population) {
-  let percentage  = (population / 7900) * 100
+  let percentage = (population / 7900) * 100
   return percentage.toFixed(1)
 }
 
@@ -26,7 +26,7 @@ console.log(percentageOfWorld2(1441))
 
 // LECTURE: Arrow Functions
 
-const percentageOfWorld3 = population => (population / 7900) * 100
+const percentageOfWorld3 = (population) => (population / 7900) * 100
 console.log(percentageOfWorld3(5000))
 
 //LECTURE: Functions Calling Other Functions
@@ -37,3 +37,13 @@ function describePopulation(country, population) {
 }
 
 console.log(describePopulation('United States', 1441))
+
+// LECTURE: Introduction to Arrays
+
+const populations = [329.5, 45.38, 128.9, 67.22]
+
+console.log(populations.length === 4)
+
+const percentages = [4.2, 0.6, 1.6, 0.9]
+
+console.log(percentageOfWorld1(populations[3]))
