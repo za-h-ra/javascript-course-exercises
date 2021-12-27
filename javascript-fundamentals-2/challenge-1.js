@@ -22,7 +22,5 @@ function checkWinner(avgDolphins, avgKoalas) {
   }
 }
 
-checkWinner(dolphins)
-checkWinner(koalas)
-checkWinner(dolphins2)
-checkWinner(koalas2)
+checkWinner(dolphins, koalas)
+checkWinner(dolphins2, koalas2) 
