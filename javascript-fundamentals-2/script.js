@@ -58,3 +58,20 @@ if (!neighbors.includes('Germany')) console.log('Probably not a central american
 neighbors[neighbors.indexOf('Panama')] = 'Colombia'
 console.log(neighbors)
 
+// Intro to Objects
+
+const zahra = {
+  firstName: 'zahra',
+  lastName: 'khan',
+  age: 28,
+  job: 'software engineer',
+  friends: ['Katie', 'Sonia']
+}
+
+const myCountry = {
+  country: 'Argentina',
+  capital: 'Buenos Aires',
+  language: 'Spanish',
+  population: 45.38,
+  neighbors: ['Chile', 'Venezuela', 'Uruguay']
+}
