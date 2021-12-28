@@ -75,3 +75,13 @@ const myCountry = {
   population: 45.38,
   neighbors: ['Chile', 'Venezuela', 'Uruguay']
 }
+
+console.log(myCountry.capital)
+console.log(myCountry['population'])
+
+console.log(`${zahra.firstName} has ${zahra.friends.length} friends, and her best friend is called ${zahra.friends[0]}.`)
+
+console.log(`${myCountry.country} has ${myCountry.population} million ${myCountry.language} speaking people, ${myCountry.neighbors.length} neighboring countries and a capital called ${myCountry.capital}.`)
+
+myCountry.population += 2
+myCountry['population'] -= 2
