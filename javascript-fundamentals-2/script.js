@@ -53,7 +53,8 @@ console.log(neighbors)
 neighbors.pop()
 console.log(neighbors)
 
-if (!neighbors.includes('Germany')) console.log('Probably not a central american country')
+if (!neighbors.includes('Germany'))
+  console.log('Probably not a central american country')
 
 neighbors[neighbors.indexOf('Panama')] = 'Colombia'
 console.log(neighbors)
@@ -63,25 +64,48 @@ console.log(neighbors)
 const zahra = {
   firstName: 'zahra',
   lastName: 'khan',
-  age: 28,
+  birthYear: 1993,
   job: 'software engineer',
-  friends: ['Katie', 'Sonia']
+  friends: ['Katie', 'Sonia'],
+  hasDriversLicense: false,
+  calcAge: function () {
+    this.age = 2037 - this.birthYear
+    return this.age
+  }, 
+
+  driversLicense: function () {
+    if (this.hasDriversLicense === true) {
+      return `has a driver's license`
+    } else {
+      return `does not have a driver's license`
+    }
+  }
 }
+console.log(zahra.calcAge())
+console.log(zahra.age)
+
+console.log(`${zahra.firstName} is a ${zahra.age} year old ${zahra.job}, and she ${zahra.driversLicense()}`)
 
 const myCountry = {
   country: 'Argentina',
   capital: 'Buenos Aires',
   language: 'Spanish',
   population: 45.38,
-  neighbors: ['Chile', 'Venezuela', 'Uruguay']
+  neighbors: ['Chile', 'Venezuela', 'Uruguay'],
 }
 
 console.log(myCountry.capital)
 console.log(myCountry['population'])
 
-console.log(`${zahra.firstName} has ${zahra.friends.length} friends, and her best friend is called ${zahra.friends[0]}.`)
+console.log(
+  `${zahra.firstName} has ${zahra.friends.length} friends, and her best friend is called ${zahra.friends[0]}.`
+)
 
-console.log(`${myCountry.country} has ${myCountry.population} million ${myCountry.language} speaking people, ${myCountry.neighbors.length} neighboring countries and a capital called ${myCountry.capital}.`)
+console.log(
+  `${myCountry.country} has ${myCountry.population} million ${myCountry.language} speaking people, ${myCountry.neighbors.length} neighboring countries and a capital called ${myCountry.capital}.`
+)
 
 myCountry.population += 2
 myCountry['population'] -= 2
+
+// Object Methods
