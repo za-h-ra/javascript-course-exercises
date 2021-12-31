@@ -158,3 +158,28 @@ for (let i = 0; i < populations.length; i++) {
 }
 
 console.log(percentages, percentages2)
+
+// Looping backwards
+
+for (let i = zahraArray.length - 1; i >= 0; i--) {
+  console.log(i, zahraArray[i])
+}
+
+// Looping within loops
+
+for (let exercise = 1; exercise < 4; exercise++) {
+  console.log(`-----STARTING EXERCISE ${exercise}`)
+  for (let rep = 1; rep < 6; rep++) {
+    console.log(`Lifting weights rep ${rep}`)
+  }
+}
+
+// LOOP WITHIN LOOP EXCERCISE
+
+const listOfNeighbors = [['Canada', 'Mexico'], ['Spain'], ['Norway', 'Sweden', 'Russia']]
+
+for (let i = 0; i < listOfNeighbors.length; i++) {
+  for (let j = 0; j < listOfNeighbors[i].length; j++) {
+    console.log(`Neighbors: ${listOfNeighbors[i][j]} `)
+  }
+}
