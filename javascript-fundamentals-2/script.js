@@ -126,8 +126,8 @@ const zahraArray = [
   'Khan',
   28,
   'Software Engineer',
-  ['Katie', 'Sonia', 'Dylan'],  
-  true
+  ['Katie', 'Sonia', 'Dylan'],
+  true,
 ]
 
 const types = []
@@ -144,10 +144,10 @@ const years = [1991, 1993, 1995, 1997, 1999]
 const ages = []
 
 for (let i = 0; i < years.length; i++) {
-  ages.push(2037 - years[i]);
+  ages.push(2037 - years[i])
 }
 
-console.log(ages) 
+console.log(ages)
 
 // continue and break
 
@@ -176,10 +176,40 @@ for (let exercise = 1; exercise < 4; exercise++) {
 
 // LOOP WITHIN LOOP EXCERCISE
 
-const listOfNeighbors = [['Canada', 'Mexico'], ['Spain'], ['Norway', 'Sweden', 'Russia']]
+const listOfNeighbors = [
+  ['Canada', 'Mexico'],
+  ['Spain'],
+  ['Norway', 'Sweden', 'Russia'],
+]
 
 for (let i = 0; i < listOfNeighbors.length; i++) {
   for (let j = 0; j < listOfNeighbors[i].length; j++) {
     console.log(`Neighbors: ${listOfNeighbors[i][j]} `)
   }
 }
+
+// While Loop
+
+let rep = 1
+while (rep <= 10) {
+  console.log(`Lifting weights repitition ${rep}`)
+  rep++
+}
+
+let dice = Math.trunc(Math.random() * 6) + 1
+console.log(dice)
+
+while (dice !== 6) {
+  console.log(`You rolled a ${dice}`)
+dice = Math.trunc(Math.random() * 6) + 1
+if (dice == 6) console.log('The loop is about to end...')
+}
+
+const percentages3 = []
+let i = 0
+while (i < populations.length) {
+  percentages3.push(percentageOfWorld1(populations[i]))
+  i++
+}
+
+console.log(percentages3)
