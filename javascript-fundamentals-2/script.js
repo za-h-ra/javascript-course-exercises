@@ -108,4 +108,10 @@ console.log(
 myCountry.population += 2
 myCountry['population'] -= 2
 
-// Object Methods
+// LOOPS
+
+
+// for loop keeps running while condition is true
+for (let i = 1; i <= 50; i++) {
+  console.log(`Voter number ${i} is currently voting!`)
+}
