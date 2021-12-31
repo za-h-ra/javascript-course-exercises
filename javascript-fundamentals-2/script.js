@@ -71,7 +71,7 @@ const zahra = {
   calcAge: function () {
     this.age = 2037 - this.birthYear
     return this.age
-  }, 
+  },
 
   driversLicense: function () {
     if (this.hasDriversLicense === true) {
@@ -79,12 +79,16 @@ const zahra = {
     } else {
       return `does not have a driver's license`
     }
-  }
+  },
 }
 console.log(zahra.calcAge())
 console.log(zahra.age)
 
-console.log(`${zahra.firstName} is a ${zahra.age} year old ${zahra.job}, and she ${zahra.driversLicense()}`)
+console.log(
+  `${zahra.firstName} is a ${zahra.age} year old ${
+    zahra.job
+  }, and she ${zahra.driversLicense()}`
+)
 
 const myCountry = {
   country: 'Argentina',
@@ -110,8 +114,47 @@ myCountry['population'] -= 2
 
 // LOOPS
 
-
 // for loop keeps running while condition is true
-for (let i = 1; i <= 50; i++) {
-  console.log(`Voter number ${i} is currently voting!`)
+// for (let i = 1; i <= 50; i++) {
+//   console.log(`Voter number ${i} is currently voting!`)
+// }
+
+// Loop Arrays, Breaking and Continuing
+
+const zahraArray = [
+  'Zahra',
+  'Khan',
+  28,
+  'Software Engineer',
+  ['Katie', 'Sonia', 'Dylan'],  
+  true
+]
+
+const types = []
+
+for (let i = 0; i < zahraArray.length; i++) {
+  console.log(zahraArray[i], typeof zahraArray[i])
+  types[i] = typeof zahraArray[i]
 }
+
+console.log(types)
+
+const years = [1991, 1993, 1995, 1997, 1999]
+
+const ages = []
+
+for (let i = 0; i < years.length; i++) {
+  ages.push(2037 - years[i]);
+}
+
+console.log(ages) 
+
+// continue and break
+
+const percentages2 = []
+
+for (let i = 0; i < populations.length; i++) {
+  percentages2.push(percentageOfWorld1(populations[i]))
+}
+
+console.log(percentages, percentages2)
