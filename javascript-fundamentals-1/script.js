@@ -49,5 +49,35 @@ console.log(isPopMore);
 let avgPopulation = 33000000;
 console.log(population < avgPopulation);
 
-let description = `The ${country} is in ${continent}, and its ${population} people speak ${language}.`;
+let description =
+  "The " +
+  country +
+  " is in " +
+  continent +
+  ", and its " +
+  population +
+  " people speak " +
+  language +
+  ".";
 console.log(description);
+
+// STRINGS AND TEMPLATE LITERALS
+// Recreate the description variable from the last assignment, this time using the template literal syntax.
+
+let description2 = `The ${country} is in ${continent}, and its ${population} people speak ${language}.`;
+console.log(description);
+
+// IF/ELSE STATEMENTS
+// If your country's population is greater than 33 million, log a string like this to the console: "Portugal's population is 22 million below average" (the 22 is the average of 33 minus the country's population).
+
+// After checking the result, change the population temporarily to 13 and then to 130. See the different results, and set the population back to original.
+
+if (population > avgPopulation) {
+  console.log(`${country}'s population is above average`);
+} else {
+  console.log(
+    `${country}'s population is ${
+      population - avgPopulation
+    } million below average.`
+  );
+}
