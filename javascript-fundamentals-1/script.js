@@ -23,7 +23,7 @@ console.log(typeof isIsland);
 console.log(typeof language);
 console.log(typeof population);
 
-language = "English";
+language = "Mandarin";
 
 // BASIC OPERATORS
 // 1. If your country split in half, and each half would contain half the population, then how many people would live in each half?
@@ -154,7 +154,8 @@ if (language === "English" && population < 50000000 && !isIsland) {
 // for all other simply log 'Great language too :D'.
 
 switch (language) {
-  case "Chinese" || "Mandarin":
+  case "Chinese":
+  case "Mandarin":
     console.log("MOST number of native speakers!");
     break;
   case "Spanish":
@@ -171,3 +172,14 @@ switch (language) {
   default:
     console.log("Great language too :D");
 }
+
+// THE CONDITIONAL (TERNARY) OPERATOR
+// If your country's population is greater than 33 million, use the ternary operator to log a string like this to the console: "Portugal's population is above average". Otherwise, simply log "Portugal's population is below average". Notice how only one word change between these two sentences!
+
+// After checking the result, change the population temporarily to 13 and then to 130. See the different results, and set the population back to original.
+
+console.log(
+  `${country}'s population is ${
+    population > 33000000 ? "above" : "below"
+  } average`
+);
